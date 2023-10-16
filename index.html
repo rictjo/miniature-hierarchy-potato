@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title> HPA protein coding hierarchical edge bundling </title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+
+<script type="module"> 
+
+import define from "./index.js";
+
+import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
